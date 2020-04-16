@@ -42,7 +42,9 @@ project "GLFW"
 		{
 			"_GLFW_X11"
 		}
-
+		
+		links { "libdl.so.2" }
+		
 	filter "system:windows"
 		systemversion "latest"
 		staticruntime "On"
